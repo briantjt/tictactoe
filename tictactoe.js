@@ -47,8 +47,8 @@ function validMove(index) {
   );
 }
 
-function updateGameState(choice, marker, player) {
-  board[choice] = marker;
+function updateGameState(index, marker, player) {
+  board[index] = marker;
   if (hasWon(marker)) {
     printBoard();
     console.log(`${player} wins!`);
